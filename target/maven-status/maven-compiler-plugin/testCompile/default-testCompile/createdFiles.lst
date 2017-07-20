@@ -1,0 +1,4 @@
+RunCukesTest.class
+hooks/ServerHooks.class
+nicebank/Steps.class
+transforms/MoneyConverter.class
