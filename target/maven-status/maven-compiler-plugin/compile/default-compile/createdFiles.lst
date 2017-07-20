@@ -1,4 +1,8 @@
 nicebank/AtmServer.class
 nicebank/AtmServlet.class
 nicebank/Account.class
+nicebank/StudentDAO.class
+nicebank/Student.class
+nicebank/StudentMapper.class
+nicebank/StudentJDBCTemplate.class
 nicebank/Money.class

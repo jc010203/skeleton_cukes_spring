@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 691501352,
+  "duration": 734432527,
   "status": "passed"
 });
 formatter.scenario({
@@ -48,7 +48,7 @@ formatter.match({
   "location": "Steps.myAccountHasBeenCreditedWith$(Money)"
 });
 formatter.result({
-  "duration": 163846096,
+  "duration": 706506075,
   "status": "passed"
 });
 formatter.match({
@@ -61,8 +61,8 @@ formatter.match({
   "location": "Steps.iWithdraw$(int)"
 });
 formatter.result({
-  "duration": 1786143,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat nicebank.Steps.iWithdraw$(Steps.java:29)\n\tat ✽.When I withdraw $20(cash_withdrawal.feature:5)\n",
+  "duration": 5260760,
+  "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat nicebank.Steps.iWithdraw$(Steps.java:45)\n\tat ✽.When I withdraw $20(cash_withdrawal.feature:5)\n",
   "status": "pending"
 });
 formatter.match({
@@ -94,7 +94,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 13227166,
+  "duration": 22888337,
   "status": "passed"
 });
 });

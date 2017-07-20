@@ -9,6 +9,8 @@ import org.junit.Assert;
 import org.springframework.beans.factory.annotation.Autowired;
 import transforms.MoneyConverter;
 
+import java.util.List;
+
 /**
  * Created by juan.hernandez on 7/20/17.
  */
@@ -17,10 +19,24 @@ public class Steps {
     @Autowired
     private Account myAccount;
 
+    @Autowired
+    private StudentJDBCTemplate template;
+
     @Given("^my account has been credited with \\$(\\d+\\.\\d+)$")
     public void myAccountHasBeenCreditedWith$(@Transform(MoneyConverter.class) Money amount) throws Throwable {
-       myAccount.credit(amount);
-       Assert.assertEquals(myAccount.getBalance(), amount);
+        System.out.println("------Records Creation--------" );
+        template.create("Zara", 11);
+
+        List<Student> students = template.listStudents();
+
+        for (Student record : students) {
+            System.out.print("ID : " + record.getId() );
+            System.out.print(", Name : " + record.getName() );
+            System.out.println(", Age : " + record.getAge());
+        }
+
+        myAccount.credit(amount);
+        Assert.assertEquals(myAccount.getBalance(), amount);
     }
 
     @When("^I withdraw \\$(\\d+)$")
