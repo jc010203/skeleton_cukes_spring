@@ -24,17 +24,6 @@ public class Steps {
 
     @Given("^my account has been credited with \\$(\\d+\\.\\d+)$")
     public void myAccountHasBeenCreditedWith$(@Transform(MoneyConverter.class) Money amount) throws Throwable {
-        System.out.println("------Records Creation--------" );
-        template.create("Zara", 11);
-
-        List<Student> students = template.listStudents();
-
-        for (Student record : students) {
-            System.out.print("ID : " + record.getId() );
-            System.out.print(", Name : " + record.getName() );
-            System.out.println(", Age : " + record.getAge());
-        }
-
         myAccount.credit(amount);
         Assert.assertEquals(myAccount.getBalance(), amount);
     }
