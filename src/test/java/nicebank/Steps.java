@@ -28,20 +28,20 @@ public class Steps {
         Assert.assertEquals(myAccount.getBalance(), amount);
     }
 
-    @When("^I withdraw \\$(\\d+)$")
-    public void iWithdraw$(int arg1) throws Throwable {
+    @When("^I withdraw \\$(\\d+\\.\\d+)$")
+    public void iWithdraw$(@Transform(MoneyConverter.class) Money amount) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
 
-    @Then("^\\$(\\d+) should be dispensed$")
+    @Then("^\\$(\\d+\\.\\d+) should be dispensed$")
     public void $ShouldBeDispensed(int arg1) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
 
-    @Then("^the balance of my account should be \\$(\\d+)\\.(\\d+)$")
-    public void theBalanceOfMyAccountShouldBe$(int arg1, int arg2) throws Throwable {
+    @Then("^the balance of my account should be \\$(\\d+\\.\\d+)$")
+    public void theBalanceOfMyAccountShouldBe$(@Transform(MoneyConverter.class) Money amount) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }

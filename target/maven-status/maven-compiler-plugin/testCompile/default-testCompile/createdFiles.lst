@@ -1,4 +1,5 @@
-RunCukesTest.class
 hooks/ServerHooks.class
+support/AtmUserInterface.class
+RunCukesTest.class
 nicebank/Steps.class
 transforms/MoneyConverter.class

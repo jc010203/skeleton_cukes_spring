@@ -1,4 +1,5 @@
 /Users/juan.hernandez/cucumber/atm-spring-example/src/test/java/transforms/MoneyConverter.java
 /Users/juan.hernandez/cucumber/atm-spring-example/src/test/java/nicebank/Steps.java
 /Users/juan.hernandez/cucumber/atm-spring-example/src/test/java/hooks/ServerHooks.java
+/Users/juan.hernandez/cucumber/atm-spring-example/src/test/java/support/AtmUserInterface.java
 /Users/juan.hernandez/cucumber/atm-spring-example/src/test/java/RunCukesTest.java
