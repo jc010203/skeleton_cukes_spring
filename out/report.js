@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 580529407,
+  "duration": 500599646,
   "status": "passed"
 });
 formatter.scenario({
@@ -48,7 +48,7 @@ formatter.match({
   "location": "Steps.myAccountHasBeenCreditedWith$(Money)"
 });
 formatter.result({
-  "duration": 310733751,
+  "duration": 310213484,
   "status": "passed"
 });
 formatter.match({
@@ -61,8 +61,9 @@ formatter.match({
   "location": "Steps.iWithdraw$(Money)"
 });
 formatter.result({
-  "duration": 216158,
-  "status": "passed"
+  "duration": 391058358,
+  "error_message": "java.lang.UnsupportedOperationException: You shouldn\u0027t close this WebDriver. It\u0027s shared and will close when the JVM exits.\n\tat webdriver.SharedDriver.close(SharedDriver.java:48)\n\tat nicebank.AutomatedTeller.withdrawFrom(AutomatedTeller.java:39)\n\tat nicebank.Steps.iWithdraw$(Steps.java:40)\n\tat ✽.When I withdraw $20.00(cash_withdrawal.feature:5)\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -74,8 +75,7 @@ formatter.match({
   "location": "Steps.$ShouldBeDispensed(Money)"
 });
 formatter.result({
-  "duration": 110803,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -87,11 +87,10 @@ formatter.match({
   "location": "Steps.theBalanceOfMyAccountShouldBe$(Money)"
 });
 formatter.result({
-  "duration": 115146,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 31143740,
+  "duration": 38839671,
   "status": "passed"
 });
 });

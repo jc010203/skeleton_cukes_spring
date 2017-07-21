@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="RunCukesTest" time="0.043" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="RunCukesTest" time="0.068" errors="2" skipped="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
@@ -64,8 +64,32 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase classname="Scenario: Successful withdrawal from an account in credit" name="Given my account has been credited with $100.00" time="0.003"/>
-  <testcase classname="Scenario: Successful withdrawal from an account in credit" name="When I withdraw $20.00" time="0"/>
-  <testcase classname="Scenario: Successful withdrawal from an account in credit" name="Then $20.00 should be dispensed" time="0.001"/>
-  <testcase classname="Scenario: Successful withdrawal from an account in credit" name="And the balance of my account should be $80.00" time="0"/>
-  <testcase classname="Scenario: Successful withdrawal from an account in credit" name="Scenario: Successful withdrawal from an account in credit" time="0.039"/>
+  <testcase classname="Scenario: Successful withdrawal from an account in credit" name="When I withdraw $20.00" time="0.005">
+    <error message="You shouldn&apos;t close this WebDriver. It&apos;s shared and will close when the JVM exits." type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: You shouldn&apos;t close this WebDriver. It&apos;s shared and will close when the JVM exits.
+	at webdriver.SharedDriver.close(SharedDriver.java:48)
+	at nicebank.AutomatedTeller.withdrawFrom(AutomatedTeller.java:39)
+	at nicebank.Steps.iWithdraw$(Steps.java:40)
+	at ✽.When I withdraw $20.00(cash_withdrawal.feature:5)
+</error>
+    <system-err>1500654986214	Marionette	DEBUG	Received DOM event &quot;beforeunload&quot; for &quot;about:blank&quot;
+1500654986415	Marionette	DEBUG	Received DOM event &quot;beforeunload&quot; for &quot;about:blank&quot;
+1500654986419	Marionette	DEBUG	Received DOM event &quot;pagehide&quot; for &quot;about:blank&quot;
+1500654986419	Marionette	DEBUG	Received DOM event &quot;unload&quot; for &quot;about:blank&quot;
+1500654986510	Marionette	DEBUG	Received DOM event &quot;DOMContentLoaded&quot; for &quot;about:neterror?e=netReset&amp;u=http%3A//192.168.0.4%3A9988/&amp;c=UTF-8&amp;f=regular&amp;d=The%20connection%20to%20the%20server%20was%20reset%20while%20the%20page%20was%20loading.&quot;
+</system-err>
+  </testcase>
+  <testcase classname="Scenario: Successful withdrawal from an account in credit" name="Scenario: Successful withdrawal from an account in credit" time="0.005">
+    <error message="You shouldn&apos;t close this WebDriver. It&apos;s shared and will close when the JVM exits." type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: You shouldn&apos;t close this WebDriver. It&apos;s shared and will close when the JVM exits.
+	at webdriver.SharedDriver.close(SharedDriver.java:48)
+	at nicebank.AutomatedTeller.withdrawFrom(AutomatedTeller.java:39)
+	at nicebank.Steps.iWithdraw$(Steps.java:40)
+	at ✽.When I withdraw $20.00(cash_withdrawal.feature:5)
+</error>
+  </testcase>
+  <testcase classname="Scenario: Successful withdrawal from an account in credit" name="Then $20.00 should be dispensed" time="0.026">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Successful withdrawal from an account in credit" name="And the balance of my account should be $80.00" time="0.029">
+    <skipped/>
+  </testcase>
 </testsuite>

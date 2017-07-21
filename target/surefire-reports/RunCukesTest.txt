@@ -1,4 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: RunCukesTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.775 sec
+Tests run: 5, Failures: 0, Errors: 2, Skipped: 2, Time elapsed: 10.211 sec <<< FAILURE!
+When I withdraw $20.00(Scenario: Successful withdrawal from an account in credit)  Time elapsed: 0.005 sec  <<< ERROR!
+java.lang.UnsupportedOperationException: You shouldn't close this WebDriver. It's shared and will close when the JVM exits.
+	at webdriver.SharedDriver.close(SharedDriver.java:48)
+	at nicebank.AutomatedTeller.withdrawFrom(AutomatedTeller.java:39)
+	at nicebank.Steps.iWithdraw$(Steps.java:40)
+	at ✽.When I withdraw $20.00(cash_withdrawal.feature:5)
+
+Scenario: Successful withdrawal from an account in credit  Time elapsed: 0.005 sec  <<< ERROR!
+java.lang.UnsupportedOperationException: You shouldn't close this WebDriver. It's shared and will close when the JVM exits.
+	at webdriver.SharedDriver.close(SharedDriver.java:48)
+	at nicebank.AutomatedTeller.withdrawFrom(AutomatedTeller.java:39)
+	at nicebank.Steps.iWithdraw$(Steps.java:40)
+	at ✽.When I withdraw $20.00(cash_withdrawal.feature:5)
+
