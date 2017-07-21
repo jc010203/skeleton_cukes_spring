@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b05b786b-c45d-45e3-abe9-c25355286212" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/report.js" afterPath="$PROJECT_DIR$/out/report.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/RunCukesTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/RunCukesTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-RunCukesTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-RunCukesTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/cucumber.xml" afterPath="$PROJECT_DIR$/src/test/resources/cucumber.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutomatedTeller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AutomatedTeller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nicebank/AutomatedTeller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -47,15 +44,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cucumber.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cucumber.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="22" column="66" lean-forward="false" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
-              <folding>
-                <marker date="1500651451000" expanded="true" signature="1101:1474" ph="..." />
-                <marker date="1500651451000" expanded="true" signature="1566:1687" ph="..." />
-              </folding>
+            <state relative-caret-position="330">
+              <caret line="22" column="77" lean-forward="false" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -164,12 +158,12 @@
         <option value="$PROJECT_DIR$/src/main/java/nicebank/StudentDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/nicebank/StudentMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/nicebank/StudentJDBCTemplate.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/cucumber.xml" />
         <option value="$PROJECT_DIR$/src/main/java/nicebank/Cashslot.java" />
         <option value="$PROJECT_DIR$/src/test/resources/cash_withdrawal.feature" />
         <option value="$PROJECT_DIR$/src/test/java/nicebank/Steps.java" />
         <option value="$PROJECT_DIR$/src/main/java/nicebank/Teller.java" />
         <option value="$PROJECT_DIR$/src/main/java/nicebank/AutomatedTeller.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/cucumber.xml" />
       </list>
     </option>
   </component>
@@ -672,6 +666,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="29" y="23" width="784" height="809" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -696,7 +691,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4234694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4234694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -865,10 +860,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
           <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding>
-            <marker date="1500651451000" expanded="true" signature="1101:1474" ph="..." />
-            <marker date="1500651451000" expanded="true" signature="1566:1687" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,10 +999,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <marker date="1500651451000" expanded="true" signature="1101:1474" ph="..." />
-            <marker date="1500651451000" expanded="true" signature="1566:1687" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1093,17 +1082,6 @@
           <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="22" column="66" lean-forward="false" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
-          <folding>
-            <marker date="1500651451000" expanded="true" signature="1101:1474" ph="..." />
-            <marker date="1500651451000" expanded="true" signature="1566:1687" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1239,6 +1217,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/cucumber.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="77" lean-forward="false" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
           <folding />
         </state>
       </provider>
