@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 629902134,
+  "duration": 882620451,
   "status": "passed"
 });
 formatter.scenario({
@@ -25,12 +25,12 @@ formatter.step({
 });
 formatter.step({
   "line": 5,
-  "name": "I withdraw $20",
+  "name": "I withdraw $20.00",
   "keyword": "When "
 });
 formatter.step({
   "line": 6,
-  "name": "$20 should be dispensed",
+  "name": "$20.00 should be dispensed",
   "keyword": "Then "
 });
 formatter.step({
@@ -48,53 +48,50 @@ formatter.match({
   "location": "Steps.myAccountHasBeenCreditedWith$(Money)"
 });
 formatter.result({
-  "duration": 125324281,
+  "duration": 121906692,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "20",
+      "val": "20.00",
       "offset": 12
     }
   ],
-  "location": "Steps.iWithdraw$(int)"
+  "location": "Steps.iWithdraw$(Money)"
 });
 formatter.result({
-  "duration": 2288925,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat nicebank.Steps.iWithdraw$(Steps.java:34)\n\tat ✽.When I withdraw $20(cash_withdrawal.feature:5)\n",
-  "status": "pending"
+  "duration": 669168,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "20",
+      "val": "20.00",
       "offset": 1
     }
   ],
-  "location": "Steps.$ShouldBeDispensed(int)"
+  "location": "Steps.$ShouldBeDispensed(Money)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 116552,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "80",
+      "val": "80.00",
       "offset": 37
-    },
-    {
-      "val": "00",
-      "offset": 40
     }
   ],
-  "location": "Steps.theBalanceOfMyAccountShouldBe$(int,int)"
+  "location": "Steps.theBalanceOfMyAccountShouldBe$(Money)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 121915,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 12771462,
+  "duration": 28086492,
   "status": "passed"
 });
 });

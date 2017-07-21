@@ -20,29 +20,33 @@ public class Steps {
     private Account myAccount;
 
     @Autowired
+    private Teller teller;
+
+
+    @Autowired
+    private Cashslot cashslot;
+
+    @Autowired
     private StudentJDBCTemplate template;
 
     @Given("^my account has been credited with \\$(\\d+\\.\\d+)$")
     public void myAccountHasBeenCreditedWith$(@Transform(MoneyConverter.class) Money amount) throws Throwable {
         myAccount.credit(amount);
-        Assert.assertEquals(myAccount.getBalance(), amount);
+        Assert.assertEquals("Incorrect balance -",myAccount.getBalance(), amount);
     }
 
     @When("^I withdraw \\$(\\d+\\.\\d+)$")
     public void iWithdraw$(@Transform(MoneyConverter.class) Money amount) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        teller.withdrawFrom(myAccount, amount);
     }
 
     @Then("^\\$(\\d+\\.\\d+) should be dispensed$")
-    public void $ShouldBeDispensed(int arg1) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    public void $ShouldBeDispensed(@Transform(MoneyConverter.class)Money amount) throws Throwable {
+        cashslot.dispense(amount);
     }
 
     @Then("^the balance of my account should be \\$(\\d+\\.\\d+)$")
     public void theBalanceOfMyAccountShouldBe$(@Transform(MoneyConverter.class) Money amount) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        Assert.assertEquals("Incorrect balance -",myAccount.getBalance(), amount);
     }
 }
