@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 697568089,
+  "duration": 580529407,
   "status": "passed"
 });
 formatter.scenario({
@@ -48,7 +48,7 @@ formatter.match({
   "location": "Steps.myAccountHasBeenCreditedWith$(Money)"
 });
 formatter.result({
-  "duration": 155762500,
+  "duration": 310733751,
   "status": "passed"
 });
 formatter.match({
@@ -61,7 +61,7 @@ formatter.match({
   "location": "Steps.iWithdraw$(Money)"
 });
 formatter.result({
-  "duration": 173781,
+  "duration": 216158,
   "status": "passed"
 });
 formatter.match({
@@ -74,7 +74,7 @@ formatter.match({
   "location": "Steps.$ShouldBeDispensed(Money)"
 });
 formatter.result({
-  "duration": 150108,
+  "duration": 110803,
   "status": "passed"
 });
 formatter.match({
@@ -87,11 +87,11 @@ formatter.match({
   "location": "Steps.theBalanceOfMyAccountShouldBe$(Money)"
 });
 formatter.result({
-  "duration": 134112,
+  "duration": 115146,
   "status": "passed"
 });
 formatter.after({
-  "duration": 41934782,
+  "duration": 31143740,
   "status": "passed"
 });
 });

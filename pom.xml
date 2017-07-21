@@ -13,14 +13,14 @@
     <activejdbc.version>1.4.11</activejdbc.version>
     <cucumber.version>1.2.4</cucumber.version>
     <dbh2.version>1.4.191</dbh2.version>
-    <jetty.version>9.3.6.v20151106</jetty.version>
+    <jetty.version>9.4.1.v20170120</jetty.version>
     <junit.version>4.12</junit.version>
     <liquibase.version>3.4.2</liquibase.version>
     <maven.compiler>3.5</maven.compiler>
     <mysql.version>5.1.38</mysql.version>
     <picocontainer.version>2.15</picocontainer.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <selenium.version>2.49.0</selenium.version>
+    <selenium.version>3.4.0</selenium.version>
     <servlet.version>3.0.1</servlet.version>
     <slf4j.version>1.7.13</slf4j.version>
     <spring.version>4.2.4.RELEASE</spring.version>
@@ -43,7 +43,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
       <dependency>
@@ -82,6 +82,11 @@
           <groupId>mysql</groupId>
           <artifactId>mysql-connector-java</artifactId>
           <version>5.1.6</version>
+      </dependency>
+      <dependency>
+          <groupId>org.seleniumhq.selenium</groupId>
+          <artifactId>selenium-java</artifactId>
+          <version>${selenium.version}</version>
       </dependency>
 
   </dependencies>

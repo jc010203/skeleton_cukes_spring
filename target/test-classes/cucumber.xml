@@ -20,7 +20,7 @@
     <context:annotation-config/>
 
 
-    <context:component-scan base-package="hooks, nicebank, support" />
+    <context:component-scan base-package="hooks, nicebank, support, webdriver" />
 
 
     <!-- Initialization for data source -->

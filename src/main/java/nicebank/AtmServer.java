@@ -12,7 +12,7 @@ public class AtmServer {
     private Server server;
 
     public AtmServer(int port){
-        server = new Server(port);
+        server = new Server(9988);
 
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
